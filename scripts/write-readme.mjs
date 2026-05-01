@@ -1,9 +1,12 @@
+import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 
 const generatedAt = new Date().toISOString().replace("T", " ").slice(0, 16) + " UTC";
+const atlas = await readFile("assets/profile-atlas.png");
+const atlasVersion = createHash("sha256").update(atlas).digest("hex").slice(0, 12);
 
 const readme = `<p align="center">
-  <img src="./assets/profile-atlas.png" alt="Interstellar Atlas GitHub profile for Muhammad Khalfani Shaquille Indrajaya" width="100%" />
+  <img src="./assets/profile-atlas.png?v=${atlasVersion}" alt="Interstellar Atlas GitHub profile for Muhammad Khalfani Shaquille Indrajaya" width="100%" />
 </p>
 
 <p align="center">
@@ -35,5 +38,4 @@ const readme = `<p align="center">
 </details>
 `;
 
-await readFile("assets/profile-atlas.png");
 await writeFile("README.md", readme, "utf8");
