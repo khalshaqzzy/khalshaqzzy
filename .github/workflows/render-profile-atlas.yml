@@ -1,4 +1,4 @@
-name: Refresh profile telemetry
+name: Render profile atlas
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  refresh:
+  render:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,22 +20,29 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: "npm"
 
-      - name: Refresh generated telemetry
-        run: node scripts/update-profile-telemetry.mjs
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Capture rendered profile
+        run: npm run capture
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: khalshaqzzy
 
-      - name: Commit refreshed telemetry
+      - name: Commit rendered profile
         run: |
           if [[ -z "$(git status --porcelain)" ]]; then
-            echo "Telemetry already current."
+            echo "Profile capture already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/github-telemetry.svg assets/contribution-tiles.svg
-          git commit -m "chore: refresh profile telemetry"
+          git add README.md assets/profile-atlas.png
+          git commit -m "chore: render profile atlas"
           git push

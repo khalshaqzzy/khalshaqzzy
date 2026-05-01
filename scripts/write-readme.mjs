@@ -1,4 +1,8 @@
-<p align="center">
+import { readFile, writeFile } from "node:fs/promises";
+
+const generatedAt = new Date().toISOString().replace("T", " ").slice(0, 16) + " UTC";
+
+const readme = `<p align="center">
   <img src="./assets/profile-atlas.png" alt="Interstellar Atlas GitHub profile for Muhammad Khalfani Shaquille Indrajaya" width="100%" />
 </p>
 
@@ -10,7 +14,7 @@
 
 <!-- PROFILE_CAPTURE:START -->
 <p align="center">
-  <sub>Rendered from the React / Next Interstellar Atlas source and captured with Playwright. Last generated: 2026-05-01 20:31 UTC</sub>
+  <sub>Rendered from the React / Next Interstellar Atlas source and captured with Playwright. Last generated: ${generatedAt}</sub>
 </p>
 <!-- PROFILE_CAPTURE:END -->
 
@@ -29,3 +33,7 @@
 | Contact | khalshaquille03@gmail.com |
 
 </details>
+`;
+
+await readFile("assets/profile-atlas.png");
+await writeFile("README.md", readme, "utf8");
