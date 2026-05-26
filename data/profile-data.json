@@ -48,7 +48,6 @@
     }
   ],
   "contributionLevels": [
-    1,
     0,
     2,
     0,
@@ -299,7 +298,8 @@
     1,
     3,
     4,
-    1
+    1,
+    0
   ],
-  "generatedAt": "2026-05-25 19:58 UTC"
+  "generatedAt": "2026-05-26 04:34 UTC"
 }
