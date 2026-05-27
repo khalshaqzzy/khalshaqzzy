@@ -10,11 +10,11 @@
   "languages": [
     {
       "label": "Jupyter",
-      "value": 49.6
+      "value": 49.4
     },
     {
       "label": "TypeScript",
-      "value": 42.2
+      "value": 42.4
     },
     {
       "label": "Python",
@@ -32,19 +32,19 @@
   "activity": [
     {
       "label": "Code pushes",
-      "value": "70"
+      "value": "69"
     },
     {
       "label": "Pull requests",
-      "value": "14"
-    },
-    {
-      "label": "Stars",
-      "value": "8"
+      "value": "16"
     },
     {
       "label": "Refs created",
-      "value": "6"
+      "value": "7"
+    },
+    {
+      "label": "Stars",
+      "value": "7"
     }
   ],
   "contributionLevels": [
@@ -301,5 +301,5 @@
     1,
     0
   ],
-  "generatedAt": "2026-05-27 16:12 UTC"
+  "generatedAt": "2026-05-27 20:29 UTC"
 }
