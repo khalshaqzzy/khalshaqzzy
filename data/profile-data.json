@@ -1,7 +1,7 @@
 {
   "metrics": {
     "publicRepos": 16,
-    "followers": 5,
+    "followers": 6,
     "totalStars": 5,
     "totalForks": 0,
     "contributionTotal": 775,
@@ -36,11 +36,11 @@
     },
     {
       "label": "Pull requests",
-      "value": "27"
+      "value": "26"
     },
     {
       "label": "Refs created",
-      "value": "10"
+      "value": "9"
     },
     {
       "label": "Forks",
@@ -48,7 +48,6 @@
     }
   ],
   "contributionLevels": [
-    1,
     0,
     0,
     0,
@@ -297,9 +296,10 @@
     0,
     2,
     2,
+    0,
     0,
     0,
     0
   ],
-  "generatedAt": "2026-06-01 21:44 UTC"
+  "generatedAt": "2026-06-02 05:00 UTC"
 }
