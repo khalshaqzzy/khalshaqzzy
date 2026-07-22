@@ -31,10 +31,6 @@
   ],
   "activity": [
     {
-      "label": "Refs created",
-      "value": "1"
-    },
-    {
       "label": "Code pushes",
       "value": "1"
     }
@@ -293,5 +289,5 @@
     0,
     1
   ],
-  "generatedAt": "2026-07-22 14:20 UTC"
+  "generatedAt": "2026-07-22 19:42 UTC"
 }
