@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-atlas.png?v=122da84498ff" alt="Interstellar Atlas GitHub profile for Muhammad Khalfani Shaquille Indrajaya" width="100%" />
+  <img src="./assets/profile-atlas.png?v=a73068fac81e" alt="Interstellar Atlas GitHub profile for Muhammad Khalfani Shaquille Indrajaya" width="100%" />
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 
 <!-- PROFILE_CAPTURE:START -->
 <p align="center">
-  <sub>Rendered from the React / Next Interstellar Atlas source and captured with Playwright. Last generated: 2026-08-23 01:59 UTC</sub>
+  <sub>Rendered from the React / Next Interstellar Atlas source and captured with Playwright. Last generated: 2026-08-23 07:00 UTC</sub>
 </p>
 <!-- PROFILE_CAPTURE:END -->
 
