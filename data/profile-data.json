@@ -36,11 +36,11 @@
     },
     {
       "label": "Pull requests",
-      "value": "33"
+      "value": "32"
     },
     {
       "label": "Refs created",
-      "value": "11"
+      "value": "12"
     },
     {
       "label": "Public",
@@ -301,5 +301,5 @@
     4,
     1
   ],
-  "generatedAt": "2026-08-29 16:42 UTC"
+  "generatedAt": "2026-08-29 20:54 UTC"
 }
