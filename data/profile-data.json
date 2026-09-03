@@ -36,11 +36,11 @@
     },
     {
       "label": "Pull requests",
-      "value": "33"
+      "value": "32"
     },
     {
       "label": "Refs created",
-      "value": "17"
+      "value": "18"
     },
     {
       "label": "Delete",
@@ -56,7 +56,6 @@
     0,
     0,
     0,
-    0,
     1,
     1,
     3,
@@ -299,7 +298,8 @@
     0,
     1,
     1,
-    1
+    1,
+    0
   ],
-  "generatedAt": "2026-09-02 21:01 UTC"
+  "generatedAt": "2026-09-03 04:21 UTC"
 }
